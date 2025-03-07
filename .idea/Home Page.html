@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTrack - Your Personal Fitness Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>FitTrack</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Workouts</a></li>
+            <li><a href="#">Nutrition</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><a href="#">Community</a></li>
+        </ul>
+        <div class="profile">
+            <i class="fas fa-bell"></i>
+            <div class="profile-img">
+                <img src="/api/placeholder/40/40" alt="Profile Picture - Athletic male with short dark hair">
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome Back, <span class="user-name">Alex</span></h2>
+            <p>Ready to crush your fitness goals today?</p>
+            <button class="btn-primary">Start Today's Workout</button>
+        </div>
+        <div class="stats-summary">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-fire"></i></div>
+                <div class="stat-info">
+                    <h3>756</h3>
+                    <p>Calories Burned</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-dumbbell"></i></div>
+                <div class="stat-info">
+                    <h3>4</h3>
+                    <p>Workouts This Week</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                <div class="stat-info">
+                    <h3>85%</h3>
+                    <p>Goal Progress</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="workout-plans">
+        <div class="section-header">
+            <h2>Workout Plans</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="plan-cards">
+            <div class="plan-card">
+                <div class="plan-img">
+                    <img src="/api/placeholder/300/180" alt="Strength Training - Person lifting heavy barbell weights in a gym">
+                    <span class="plan-category">Strength</span>
+                </div>
+                <div class="plan-details">
+                    <h3>Full Body Strength</h3>
+                    <p>45 min · Intermediate</p>
+                    <div class="plan-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                        <span>75% complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="plan-card">
+                <div class="plan-img">
+                    <img src="/api/placeholder/300/180" alt="Cardio Training - Person running on treadmill with heart rate monitor">
+                    <span class="plan-category">Cardio</span>
+                </div>
+                <div class="plan-details">
+                    <h3>HIIT Cardio Blast</h3>
+                    <p>30 min · Advanced</p>
+                    <div class="plan-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 40%"></div>
+                        </div>
+                        <span>40% complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="plan-card">
+                <div class="plan-img">
+                    <img src="/api/placeholder/300/180" alt="Flexibility Training - Person in deep yoga stretch position">
+                    <span class="plan-category">Flexibility</span>
+                </div>
+                <div class="plan-details">
+                    <h3>Yoga for Athletes</h3>
+                    <p>35 min · Beginner</p>
+                    <div class="plan-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 20%"></div>
+                        </div>
+                        <span>20% complete</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming-section">
+        <div class="section-header">
+            <h2>Upcoming Activities</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="upcoming-activities">
+            <div class="activity-card">
+                <div class="activity-time">
+                    <h3>MON</h3>
+                    <p>10:00 AM</p>
+                </div>
+                <div class="activity-details">
+                    <h3>Upper Body Workout</h3>
+                    <p>30 minutes · Personal Trainer: Mike</p>
+                </div>
+                <button class="btn-secondary">Reschedule</button>
+            </div>
+            <div class="activity-card">
+                <div class="activity-time">
+                    <h3>WED</h3>
+                    <p>6:30 PM</p>
+                </div>
+                <div class="activity-details">
+                    <h3>Spin Class</h3>
+                    <p>45 minutes · Group Session</p>
+                </div>
+                <button class="btn-secondary">Reschedule</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="community-section">
+        <div class="section-header">
+            <h2>Community Challenges</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="challenge-cards">
+            <div class="challenge-card">
+                <div class="challenge-img">
+                    <img src="/api/placeholder/300/180" alt="10K Steps Challenge - Person walking with fitness tracker showing step count">
+                </div>
+                <div class="challenge-details">
+                    <h3>10K Steps Daily</h3>
+                    <p>124 participants</p>
+                    <button class="btn-join">Join Challenge</button>
+                </div>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-img">
+                    <img src="/api/placeholder/300/180" alt="30-Day Push-up Challenge - Person doing push-ups with proper form">
+                </div>
+                <div class="challenge-details">
+                    <h3>30-Day Push-up Challenge</h3>
+                    <p>87 participants</p>
+                    <button class="btn-join">Join Challenge</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-nav">
+        <div class="nav-item active">
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-dumbbell"></i>
+            <p>Workouts</p>
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-plus-circle"></i>
+            <p>Add</p>
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-chart-line"></i>
+            <p>Progress</p>
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-user"></i>
+            <p>Profile</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

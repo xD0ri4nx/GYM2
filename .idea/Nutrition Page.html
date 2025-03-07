@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitTrack - Nutrition</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <h1>FitTrack</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="workouts.html">Workouts</a></li>
+      <li><a href="nutrition.html" class="active">Nutrition</a></li>
+      <li><a href="progress.html">Progress</a></li>
+      <li><a href="community.html">Community</a></li>
+    </ul>
+    <div class="profile">
+      <i class="fas fa-bell"></i>
+      <div class="profile-img">
+        <img src="/api/placeholder/40/40" alt="Profile Picture">
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-header">
+    <h2>Nutrition Tracker</h2>
+    <p>Monitor your meals and stay on track with your nutrition goals</p>
+  </section>
+
+  <section class="nutrition-summary">
+    <div class="nutrition-stats">
+      <div class="nutrition-goal">
+        <div class="circle-progress">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="28" fill="none" stroke="#333333" stroke-width="10" />
+            <circle cx="50" cy="50" r="28" fill="none" stroke="#4c62e2" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="155" />
+            <text x="50" y="55" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">70%</text>
+          </svg>
+        </div>
+        <div class="goal-info">
+          <h3>Today's Progress</h3>
+          <p>1,540 / 2,200 calories</p>
+        </div>
+      </div>
+      <div class="macro-breakdown">
+        <div class="macro">
+          <div class="macro-icon protein">
+            <i class="fas fa-drumstick-bite"></i>
+          </div>
+          <div class="macro-info">
+            <h4>Protein</h4>
+            <p>85g / 120g</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%; background-color: #e24c4c;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="macro">
+          <div class="macro-icon carbs">
+            <i class="fas fa-bread-slice"></i>
+          </div>
+          <div class="macro-info">
+            <h4>Carbs</h4>
+            <p>150g / 200g</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%; background-color: #e2a84c;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="macro">
+          <div class="macro-icon fats">
+            <i class="fas fa-cheese"></i>
+          </div>
+          <div class="macro-info">
+            <h4>Fats</h4>
+            <p>45g / 70g</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 65%; background-color: #4ce28a;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="meal-tracker">
+    <div class="section-header">
+      <h3>Today's Meals</h3>
+      <button class="btn-secondary"><i class="fas fa-plus"></i> Add Meal</button>
+    </div>
+
+    <div class="meals-list">
+      <div class="meal-card">
+        <div class="meal-time">
+          <h4>Breakfast</h4>
+          <p>7:30 AM</p>
+        </div>
+        <div class="meal-details">
+          <div class="meal-item">
+            <p>Oatmeal with Berries</p>
+            <span>320 cal</span>
+          </div>
+          <div class="meal-item">
+            <p>Greek Yogurt</p>
+            <span>150 cal</span>
+          </div>
+          <div class="meal-item">
+            <p>Black Coffee</p>
+            <span>5 cal</span>
+          </div>
+        </div>
+        <div class="meal-calories">
+          <h4>475</h4>
+          <p>calories</p>
+        </div>
+        <div class="meal-actions">
+          <button class="action-btn"><i class="fas fa-pen"></i></button>
+        </div>
+      </div>
+
+      <div class="meal-card">
+        <div class="meal-time">
+          <h4>Lunch</h4>
+          <p>12:15 PM</p>
+        </div>
+        <div class="meal-details">
+          <div class="meal-item">
+            <p>Grilled Chicken Salad</p>
+            <span>350 cal</span>
+          </div>
+          <div class="meal-item">
+            <p>Whole Grain Bread</p>
+            <span>120 cal</span>
+          </div>
+          <div class="meal-item">
+            <p>Apple</p>
+            <span>95 cal</span>
+          </div>
+        </div>
+        <div class="meal-calories">
+          <h4>565</h4>
+          <p>calories</p>
+        </div>
+        <div class="meal-actions">
+          <button class="action-btn"><i class="fas fa-pen"></i></button>
+        </div>
+      </div>
+
+      <div class="meal-card">
+        <div class="meal-time">
+          <h4>Snack</h4>
+          <p>3:30 PM</p>
+        </div>
+        <div class="meal-details">
+          <div class="meal-item">
+            <p>Protein Shake</p>
+            <span>220 cal</span>
+          </div>
+          <div class="meal-item">
+            <p>Mixed Nuts</p>
+            <span>180 cal</span>
+          </div>
+        </div>
+        <div class="meal-calories">
+          <h4>400</h4>
+          <p>calories</p>
+        </div>
+        <div class="meal-actions">
+          <button class="action-btn"><i class="fas fa-pen"></i></button>
+        </div>
+      </div>
+
+      <div class="meal-card add-meal-card">
+        <div class="add-dinner">
+          <i class="fas fa-plus-circle"></i>
+          <h4>Add Dinner</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="meal-recommendations">
+    <div class="section-header">
+      <h3>Meal Recommendations</h3>
+      <a href="#" class="view-all">View All</a>
+    </div>
+    <div class="plan-cards">
+      <div class="plan-card">
+        <div class="plan-img">
+          <img src="/api/placeholder/300/180" alt="Chicken and Vegetables">
+          <span class="plan-category">High Protein</span>
+        </div>
+        <div class="plan-details">
+          <h3>Grilled Chicken & Vegetables</h3>
+          <p>450 calories · 40g protein</p>
+          <div class="recipe-info">
+            <span><i class="far fa-clock"></i> 25 min</span>
+            <span><i class="far fa-star"></i> 4.8</span>
+          </div>
+          <button class="btn-primary">View Recipe</button>
+        </div>
+      </div>
+      <div class="plan-card">
+        <div class="plan-img">
+          <img src="/api/placeholder/300/180" alt="Protein Smoothie Bowl">
+          <span class="plan-category">Post-Workout</span>
+        </div>
+        <div class="plan-details">
+          <h3>Protein Smoothie Bowl</h3>
+          <p>380 calories · 30g protein</p>
+          <div class="recipe-info">
+            <span><i class="far fa-clock"></i> 10 min</span>
+            <span><i class="far fa-star"></i> 4.6</span>
+          </div>
+          <button class="btn-primary">View Recipe</button>
+        </div>
+      </div>
+      <div class="plan-card">
+        <div class="plan-img">
+          <img src="/api/placeholder/300/180" alt="Quinoa Salad">
+          <span class="plan-category">Vegetarian</span>
+        </div>
+        <div class="plan-details">
+          <h3>Mediterranean Quinoa Salad</h3>
+          <p>320 calories · 12g protein</p>
+          <div class="recipe-info">
+            <span><i class="far fa-clock"></i> 15 min</span>
+            <span><i class="far fa-star"></i> 4.5</span>
+          </div>
+          <button class="btn-primary">View Recipe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-nav">
+    <div class="nav-item">
+      <i class="fas fa-home"></i>
+      <p>Home</p>
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-dumbbell"></i>
+      <p>Workouts</p>
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-plus-circle"></i>
+      <p>Add</p>
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-chart-line"></i>
+      <p>Progress</p>
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-user"></i>
+      <p>Profile</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
