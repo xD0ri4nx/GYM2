@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitTrack - Membership Management</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <h1>FitTrack</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Workouts</a></li>
+      <li><a href="#">Nutrition</a></li>
+      <li><a href="#">Progress</a></li>
+      <li><a href="#" class="active">Membership</a></li>
+    </ul>
+    <div class="profile">
+      <i class="fas fa-bell"></i>
+      <div class="profile-img">
+        <img src="/api/placeholder/40/40" alt="Profile Picture">
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="page-header">
+    <h2>Membership Management</h2>
+    <p>View and manage your gym membership details</p>
+  </div>
+
+  <!-- Current Membership Card -->
+  <div class="membership-card">
+    <div class="membership-badge">ACTIVE</div>
+    <h3 class="membership-type">Premium Plan</h3>
+    <p>Access to all gym locations and premium features</p>
+
+    <div class="membership-details">
+      <div class="detail-item">
+        <h4>Next Payment</h4>
+        <p>April 7, 2025</p>
+      </div>
+      <div class="detail-item">
+        <h4>Amount</h4>
+        <p>$49.99/mo</p>
+      </div>
+      <div class="detail-item">
+        <h4>Status</h4>
+        <p>Active</p>
+      </div>
+      <div class="detail-item">
+        <h4>Member Since</h4>
+        <p>Dec 2023</p>
+      </div>
+    </div>
+
+    <div class="membership-actions">
+      <button class="btn-accent" id="renewBtn">Renew Now (Save 10%)</button>
+      <button class="btn-outline" id="changeBtn">Change Plan</button>
+    </div>
+  </div>
+
+  <!-- Pricing Plans Section -->
+  <section class="pricing-plans">
+    <div class="section-header">
+      <h2>Membership Plans</h2>
+    </div>
+
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <h3 class="plan-name">Basic Plan</h3>
+        <div class="plan-price">$29.99 <span>/month</span></div>
+        <p>Perfect for beginners looking to start their fitness journey</p>
+
+        <div class="plan-features">
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">Access to home gym location</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">Basic workout plans</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">Fitness assessment</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-times-circle"></i>
+            <span class="feature-text">Group classes</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-times-circle"></i>
+            <span class="feature-text">Personal training sessions</span>
+          </div>
+        </div>
+
+        <button class="btn-primary">Select Plan</button>
+      </div>
+
+      <div class="pricing-card recommended">
+        <div class="recommended-badge">POPULAR</div>
+        <h3 class="plan-name">Premium Plan</h3>
+        <div class="plan-price">$49.99 <span>/month</span></div>
+        <p>Our most popular plan for serious fitness enthusiasts</p>
+
+        <div class="plan-features">
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">Access to all gym locations</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">Advanced workout plans</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">Nutrition counseling</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">Unlimited group classes</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-times-circle"></i>
+            <span class="feature-text">Personal training sessions</span>
+          </div>
+        </div>
+
+        <button class="btn-primary">Current Plan</button>
+      </div>
+
+      <div class="pricing-card">
+        <h3 class="plan-name">Elite Plan</h3>
+        <div class="plan-price">$79.99 <span>/month</span></div>
+        <p>The ultimate fitness experience with personalized coaching</p>
+
+        <div class="plan-features">
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">Access to all gym locations</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">Elite workout plans</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">Personalized nutrition plan</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">Unlimited group classes</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">4 Personal training sessions/month</span>
+          </div>
+        </div>
+
+        <button class="btn-primary">Select Plan</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gym Locations Section -->
+  <section class="gym-locations">
+    <div class="section-header">
+      <h2>Gym Locations</h2>
+      <a href="#" class="view-all">View All</a>
+    </div>
+
+    <div class="location-cards">
+      <div class="location-card">
+        <div class="location-img">
+          <img src="/api/placeholder/300/180" alt="Downtown Gym Location">
+          <div class="live-indicator">
+            <div class="live-dot"></div>
+            <span class="live-text">LIVE</span>
+          </div>
+        </div>
+        <div class="location-details">
+          <h3 class="location-name">Downtown Center</h3>
+          <p class="location-address">123 Main Street, Downtown</p>
+
+          <div class="capacity-info">
+            <span class="capacity-text">Current Capacity:</span>
+            <span class="capacity-number">68%</span>
+          </div>
+          <div class="capacity-bar">
+            <div class="capacity-progress capacity-medium" style="width: 68%"></div>
+          </div>
+
+          <div class="capacity-info">
+            <span class="capacity-text">People working out:</span>
+            <span class="capacity-number">87 / 128</span>
+          </div>
+
+          <div class="location-facilities">
+            <span class="facility-tag">Pool</span>
+            <span class="facility-tag">Sauna</span>
+            <span class="facility-tag">Group Classes</span>
+            <span class="facility-tag">24/7 Access</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-img">
+          <img src="/api/placeholder/300/180" alt="Westside Gym Location">
+          <div class="live-indicator">
+            <div class="live-dot"></div>
+            <span class="live-text">LIVE</span>
+          </div>
+        </div>
+        <div class="location-details">
+          <h3 class="location-name">Westside Fitness</h3>
+          <p class="location-address">456 West Avenue, Westside</p>
+
+          <div class="capacity-info">
+            <span class="capacity-text">Current Capacity:</span>
+            <span class="capacity-number">92%</span>
+          </div>
+          <div class="capacity-bar">
+            <div class="capacity-progress capacity-high" style="width: 92%"></div>
+          </div>
+
+          <div class="capacity-info">
+            <span class="capacity-text">People working out:</span>
+            <span class="capacity-number">110 / 120</span>
+          </div>
+
+          <div class="location-facilities">
+            <span class="facility-tag">CrossFit</span>
+            <span class="facility-tag">Boxing</span>
+            <span class="facility-tag">Group Classes</span>
+            <span class="facility-tag">Nutrition Bar</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-img">
+          <img src="/api/placeholder/300/180" alt="Eastside Gym Location">
+          <div class="live-indicator">
+            <div class="live-dot"></div>
+            <span class="live-text">LIVE</span>
+          </div>
+        </div>
+        <div class="location-details">
+          <h3 class="location-name">Eastside Studio</h3>
+          <p class="location-address">789 East Street, Eastside</p>
+
+          <div class="capacity-info">
+            <span class="capacity-text">Current Capacity:</span>
+            <span class="capacity-number">35%</span>
+          </div>
+          <div class="capacity-bar">
+            <div class="capacity-progress capacity-low" style="width: 35%"></div>
+          </div>
+
+          <div class="capacity-info">
+            <span class="capacity-text">People working out:</span>
+            <span class="capacity-number">42 / 120</span>
+          </div>
+
+          <div class="location-facilities">
+            <span class="facility-tag">Yoga</span>
+            <span class="facility-tag">Pilates</span>
+            <span class="facility-tag">Group Classes</span>
+            <span class="facility-tag">Spa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Renewal Modal -->
+  <div id="renewModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeRenewModal">&times;</span>
+      <h2 class="modal-title">Renew Your Membership</h2>
+
+      <p style="margin-bottom: 1.5rem;">Choose your payment method to renew your Premium Plan membership. Renew now and save 10%!</p>
+
+      <div class="payment-methods">
+        <div class="payment-method selected">
+          <div class="payment-method-icon">
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <div class="payment-method-details">
+            <div class="payment-method-name">Credit Card</div>
+            <div class="payment-method-info">**** **** **** 4582 (expires 09/26)</div>
+          </div>
+        </div>
+
+        <div class="payment-method">
+          <div class="payment-method-icon">
+            <i class="fab fa-paypal"></i>
+          </div>
+          <div class="payment-method-details">
+            <div class="payment-method-name">PayPal</div>
+            <div class="payment-method-info">alex@example.com</div>
+          </div>
+        </div>
+
+        <div class="payment-method">
+          <div class="payment-method-icon">
+            <i class="fas fa-plus-circle"></i>
+          </div>
+          <div class="payment-method-details">
+            <div class="payment-method-name">Add New Payment Method</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-primary">Complete Renewal</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-nav">
+    <div class="nav-item">
+      <i class="fas fa-home"></i>
+      <p>Home</p>
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-dumbbell"></i>
+      <p>Workouts</p>
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-plus-circle"></i>
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-chart-line"></i>
+      <p>Progress</p>
+    </div>
+    <div class="nav-item active">
+      <i class="fas fa-user"></i>
+      <p>Profile</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // JavaScript for modal functionality
+  const renewBtn = document.getElementById('renewBtn');
+  const closeRenewModal = document.getElementById('closeRenewModal');
+  const renewModal = document.getElementById('renewModal');
+
+  renewBtn.addEventListener('click', function() {
+    renewModal.style.display = 'block';
+  });
+
+  closeRenewModal.addEventListener('click', function() {
+    renewModal.style.display = 'none';
+  });
+
+  window.addEventListener('click', function(event) {
+    if (event.target == renewModal) {
+      renewModal.style.display = 'none';
+    }
+  });
+
+  // Payment method selection
+  const paymentMethods = document.querySelectorAll('.payment-method');
+  paymentMethods.forEach(method => {
+    method.addEventListener('click', function() {
+      paymentMethods.forEach(m => m.classList.remove('selected'));
+      this.classList.add('selected');
+    });
+  });
+</script>
+</body>
+</html>
